@@ -1,0 +1,85 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+body {
+  background: #f9fafb;  
+  color: #333; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Layout for the news grid */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+  gap: 20px;  /* Space between grid items */
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* News item styles */
+.news-item {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+}
+
+/* News image styles */
+.news-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; 
+}
+
+/* Headline styles */
+h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Author text style */
+p.author {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 8px;
+}
+
+/* Description styling for articles */
+p.description {
+  font-size: 0.95rem;
+  color: #555; 
+  margin-top: 10px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Link style */
+a {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #007BFF; 
+  text-decoration: none;
+  transition: color 0.3s ease; 
+}
+
+a:hover {
+  color: #0056b3; 
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
