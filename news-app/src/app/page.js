@@ -1,15 +1,13 @@
-"use client"; // Ensure this is client-side
+"use client";
 
-import News from "./news"; // Import the News component
-import Countries from "./countries"; // Import the Countries component
+import News from "./news";
+import Countries from "./countries";
 
 export default function Home() {
   return (
     <div className="p-6">
-      {" "}
-      {/* Add padding around the components */}
-      <News /> {/* Render the News component */}
-      <Countries /> {/* Render the Countries component */}
+      <News /> 
+      <Countries /> 
     </div>
   );
 }
